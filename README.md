@@ -148,8 +148,8 @@ Central training reference: **6.1%**
 
 | Dataset | Federated WER | Central WER | Gap |
 |---|---|---|---|
-| LibriSpeech (EN) | 16.8% | 6.1% | +10.7 pp |
-| MLS Italian | 19.7% | 18.4% | +1.3 pp |
+| LibriSpeech (EN) | 16.8% | 6.1% | +10.7 |
+| MLS Italian | 19.7% | 18.4% | +1.3 |
 
 ---
 
@@ -165,6 +165,15 @@ If you use this code or find our work helpful, please cite:
   year      = {2026},
   eprint    = {2607.25716},
   archivePrefix = {arXiv}
+}
+```
+
+```bibtex
+@inproceedings{ali2026flspeechllm,
+  title     = {Fed-SpeechLLM: Federated Learning Speech Language Models for Multilingual ASR},
+  author    = {Ali, Mohamed Nabih and Falavigna, Daniele and Brutti, Alessio},
+  booktitle = {Proceedings of Interspeech 2026},
+  year      = {2026},
 }
 ```
 
