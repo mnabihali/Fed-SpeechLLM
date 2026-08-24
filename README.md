@@ -1,7 +1,8 @@
 # SpeechLLM Meets Federated Learning for End-to-End ASR: English and Italian Case Studies
 
 [![arXiv](https://img.shields.io/badge/arXiv-2607.25716-b31b1b.svg)](https://arxiv.org/abs/2607.25716)
-[![Conference](https://img.shields.io/badge/FLICS-2026-blue.svg)](#)
+[![Conference](https://img.shields.io/badge/FLICS-2026-blue.svg)](https://www.flics-conference.org/editions/flics2026/index.php)
+[![Conference](https://img.shields.io/badge/Interspeech-2026-red.svg)](https://interspeech2026.org/)
 [![Framework](https://img.shields.io/badge/FL-Flower-green.svg)](https://flower.ai/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
