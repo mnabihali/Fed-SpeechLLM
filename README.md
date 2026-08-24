@@ -93,6 +93,12 @@ Each speaker is treated as one federated client (316 clients total in the multil
 
 ## 🚀 Usage
 
+### Data preparation
+```
+prepare_data_libri_advanced.py or prepare_data_ms_advanced.py    # Run this command to prepare .csv files for each dataset --> used for Central training
+split_csv_ls.py or split_csv_mls.py  # Run this command to split the generated .csv files by speaker from the previous script for each dataset --> used for Federated training
+```
+
 ### Centralized baseline
 ```
 Use this repo to generate the Central Training performance: "https://github.com/skit-ai/SpeechLLM"
