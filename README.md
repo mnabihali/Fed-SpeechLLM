@@ -25,7 +25,7 @@ This repository contains the code for the first systematic study of **federated 
 - Ablation study comparing full fine-tuning, adapter-based methods, and SpeechLLM/PEFT under FL
 
 <p align="center">
-  <img src="assets/architecture.png" alt="Federated SpeechLLM architecture" width="700"/>
+  <img src="assets/architecture.png" alt="Federated SpeechLLM architecture" width="500"/>
 </p>
 
 ---
@@ -36,14 +36,13 @@ The pipeline consists of:
 1. **Speech Encoder** — WavLM-Large (317M params) or Whisper-Medium (769M params), frozen
 2. **Projector** — two-stage linear adapter (projection + average pooling, k=2) mapping speech embeddings into the 2048-d TinyLlama input space
 3. **LLM Backbone** — TinyLlama-1.1B-Chat-v1.0, frozen, adapted via **LoRA**
-4. **Federated Training** — Flower-based FedAvg / Adaptive FedAvg, aggregating only LoRA + projector parameters across clients
+4. **Federated Training** —Adaptive FedAvg built on Flower-based FedAvg, aggregating only LoRA + projector parameters across clients
 
 ---
 
 ## 📂 Repository Structure
 
 ```
-.
 ├── configs/                # YAML configs for FL rounds, clients, encoders, LR schedules
 ├── data/
 │   ├── prepare_librispeech.py
