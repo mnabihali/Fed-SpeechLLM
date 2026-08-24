@@ -67,11 +67,11 @@ The pipeline consists of:
 
 ## ⚙️ Installation
 
-\```bash
+```
 git clone https://github.com/mnabihali/Fed-SpeechLLM.git
 cd Fed-SpeechLLM
 pip install -r requirements.txt
-\```
+```
 
 **Core dependencies:** PyTorch, HuggingFace `transformers`, `peft` (LoRA), `flwr` (Flower), `torchaudio`.
 
@@ -96,23 +96,19 @@ Each speaker is treated as one federated client (316 clients total in the multil
 ## 🚀 Usage
 
 ### Centralized baseline
-\```bash
-python train_central.py --config configs/central_wavlm_ls.yaml
-\```
+```
+Use this repo to generate the Central Training performance: "https://github.com/skit-ai/SpeechLLM"
+```
 
 ### Federated training
-\```bash
-python train_federated.py \
-  --config configs/federated_wavlm_ls.yaml \
-  --strategy adaptive_fedavg \
-  --num_rounds 100 \
-  --clients_per_round 0.3
-\```
+```
+python client.py 
+```
 
 ### Evaluation
-\```bash
-python eval.py --checkpoint <path_to_checkpoint> --dataset test-clean
-\```
+```
+test.sh
+```
 
 Key hyperparameters (Adaptive FedAvg): `η0 = 0.001`, `γ = 0.9` (decay factor), `τ = 10` (decay period, rounds), `T = 100` (total rounds), 30% client participation per round, 10 local epochs.
 
@@ -160,7 +156,7 @@ Central training reference: **6.1%**
 
 If you use this code or find our work helpful, please cite:
 
-\```bibtex
+```bibtex
 @inproceedings{ali2026speechllm,
   title     = {SpeechLLM Meets Federated Learning for End-to-End ASR: English and Italian Case Studies},
   author    = {Ali, Mohamed Nabih and Falavigna, Daniele and Brutti, Alessio},
@@ -169,7 +165,7 @@ If you use this code or find our work helpful, please cite:
   eprint    = {2607.25716},
   archivePrefix = {arXiv}
 }
-\```
+```
 
 ---
 
