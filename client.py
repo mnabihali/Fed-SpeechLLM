@@ -54,7 +54,7 @@ tokenizer = model.llm_tokenizer
 # ---------> Dataset Loading <---------
 
 my_collator = MyCollator(model_config['audio_encoder_name'], tokenizer)
-csv_train_dir = "flieurs_mt_clients" #"./csvs_multilingual" #"./fl_MLS_train_speaker" #"./fl_multilingual" #"./fl_MLS_train_speaker" #"./fl_LS_train100_speaker"
+csv_train_dir =  "./csvs_multilingual", #"flieurs_mt_clients" #"./fl_MLS_train_speaker" #"./fl_multilingual" #"./fl_MLS_train_speaker" #"./fl_LS_train100_speaker"
 csv_dev_dir = "./fl_MLS_dev_speaker" #"./fl_LS_dev_speaker"
 train_loaders = build_dataloaders_from_csvs(csv_dir=csv_train_dir, my_collator=my_collator,
                                             batch_size=4, num_workers=3, shuffle=True)
@@ -146,7 +146,7 @@ class CustomStrategy(fl.server.strategy.FedAvg):
 #        print("---- Done loading Checkpoints ----")
 #        print("---- Resume form Checkpoints ----")
 #        return fl.common.ndarrays_to_parameters(ndarrays)
-#    
+#   
 
     def configure_fit(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
