@@ -42,7 +42,7 @@ The pipeline consists of:
 
 ## 📂 Repository Structure
 
-\```
+```
 .
 ├── configs/                # YAML configs for FL rounds, clients, encoders, LR schedules
 ├── data/
@@ -62,7 +62,7 @@ The pipeline consists of:
 ├── scripts/                # Shell scripts for reproducing experiments
 ├── requirements.txt
 └── README.md
-\```
+```
 
 ---
 
@@ -71,8 +71,6 @@ The pipeline consists of:
 \```bash
 git clone https://github.com/mnabihali/Fed-SpeechLLM.git
 cd Fed-SpeechLLM
-conda create -n fed-speechllm python=3.10
-conda activate fed-speechllm
 pip install -r requirements.txt
 \```
 
