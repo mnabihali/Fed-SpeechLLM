@@ -44,22 +44,18 @@ The pipeline consists of:
 ## 📂 Repository Structure
 
 ```
-├── configs/                # YAML configs for FL rounds, clients, encoders, LR schedules
-├── data/
-│   ├── prepare_librispeech.py
-│   └── prepare_mls_italian.py
+├── data_prepare/
+|   |── prepare_data_libri_advanced  # prepare LibriSpeech dataset
+|   |── prepare_data_mls_advanced    # prepare MLS dataset
+|   |── split_csv_mls.py             # Split the prepared CSV file by speaker for MLS
+|   └── split_csv_ls.py              # Split the prepared CSV file by speaker for LibriSpeech
 ├── models/
 │   ├── speech_encoder.py   # WavLM / Whisper wrappers
 │   ├── projector.py        # Linear adapter + average pooling
 │   └── speechllm.py        # Full SpeechLLM (encoder + projector + LoRA-LLM)
-├── federated/
-│   ├── client.py           # Flower client (local training loop)
-│   ├── server.py           # Flower server / strategy
-│   └── strategies.py       # FedAvg, Adaptive FedAvg (exponential LR decay)
-├── train_central.py        # Centralized training baseline
-├── train_federated.py      # Federated training entry point
-├── eval.py                 # WER evaluation
-├── scripts/                # Shell scripts for reproducing experiments
+│── client.py               # Flower client (local training loop)
+├── test.py                 # WER evaluation
+├── test.sh                  # Shell scripts for reproducing experiments
 ├── requirements.txt
 └── README.md
 ```
@@ -86,10 +82,10 @@ pip install -r requirements.txt
 | LibriSpeech-100 (train-clean-100 / test-clean) | English | 100 | 251 | 5.4 | 40 |
 | MLS Italian | Italian | 247.38 | 65 | 5.27 | 10 |
 
-\```bash
+```
 python data/prepare_librispeech.py --output_dir ./data/librispeech
 python data/prepare_mls_italian.py --output_dir ./data/mls_it
-\```
+```
 
 Each speaker is treated as one federated client (316 clients total in the multilingual setting).
 
