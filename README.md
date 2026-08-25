@@ -50,12 +50,12 @@ The pipeline consists of:
 |   |── split_csv_mls.py             # Split the prepared CSV file by speaker for MLS
 |   └── split_csv_ls.py              # Split the prepared CSV file by speaker for LibriSpeech
 ├── models/
-│   ├── speech_encoder.py   # WavLM / Whisper wrappers
-│   ├── projector.py        # Linear adapter + average pooling
-│   └── speechllm.py        # Full SpeechLLM (encoder + projector + LoRA-LLM)
-│── client.py               # Flower client (local training loop)
-├── test.py                 # WER evaluation
-├── test.sh                  # Shell scripts for reproducing experiments
+│   ├── speech_encoder.py            # WavLM / Whisper wrappers
+│   ├── projector.py                 # Linear adapter + average pooling
+│   └── speechllm.py                 # Full SpeechLLM (encoder + projector + LoRA-LLM)
+│── client.py                        # Flower client (local training loop)
+├── test.py                          # WER evaluation
+├── test.sh                          # Shell scripts  to run test.py script
 ├── requirements.txt
 └── README.md
 ```
