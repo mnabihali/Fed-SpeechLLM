@@ -6,7 +6,7 @@
 [![Framework](https://img.shields.io/badge/FL-Flower-green.svg)](https://flower.ai/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Official implementation of **"SpeechLLM Meets Federated Learning for End-to-End ASR: English and Italian Case Studies"**, accepted at FLICS 2026.
+Official implementation of **"SpeechLLM Meets Federated Learning for End-to-End ASR: English and Italian Case Studies"**, accepted at FLICS 2026. and **"Fed-SpeechLLM: Federated Learning Speech Language Models for Multilingual ASR"**, accepted at Interspeech 2026.
 
 **Authors:** Mohamed Nabih Ali, Daniele Falavigna, Alessio Brutti
 **Affiliation:** Fondazione Bruno Kessler (FBK), Trento, Italy
