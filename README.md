@@ -184,7 +184,13 @@ If you use this code or find our work helpful, please cite:
 
 ## 🙏 Acknowledgements
 
-This work was carried out at the SpeechTek unit, Fondazione Bruno Kessler (FBK), Trento, Italy.
+- This work was carried out at the SpeechTek unit, Fondazione Bruno Kessler (FBK), Trento, Italy.
+
+- We acknowledge that this work was supported by Ministero delle Imprese e del Made in Italy (IPCEI Cloud DM 27 giugno 2022 - IPCEI-CL-0000007) and European Union (Next Generation EU).
+
+- We acknowledge has received funding from the European Union's Horizon Europe research and innovation programme under the project ELOQUENCE (Grant Agreement No. 101135916).
+
+- We acknowledge that this paper was partially funded from the European Union's Horizon research and innovation programme under grant agreement No 101135798, project Meetween (My Personal AI Mediator for Virtual MEETings BetWEEN People).
 
 ---
 
@@ -198,3 +204,5 @@ For questions or issues, please open a GitHub issue or contact:
 ## 📜 License
 
 This project is released under the [MIT License](LICENSE).
+
+
